@@ -156,6 +156,10 @@ class Celery
 			return true;
 		}
 	}
+
+	function GetTask($task_id) { 
+		return new AsyncResult($id, $this->connection_details);
+	}
 }
 
 /*
